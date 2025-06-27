@@ -2,24 +2,6 @@
 
 Una petita aplicació web que permet **enviar transaccions Ethereum *sense signar* directament al teu MetaMask** a partir d’un fragment JSON enganxat a la pàgina web. Està pensada com a recurs educatiu i de prova per entendre el flux de preparació i signatura de transaccions abans d’enviar‑les a la xarxa.
 
-## ✨ Funcionalitats
-
-* **Conversió ASCII → Hex**: detecta automàticament cadenes de text en el camp `data` i les codifica a hexadecimal perquè siguin vàlides com a calldata EVM.
-* **Integració MetaMask**: fa servir l’API `ethereum.request` per demanar permís, seleccionar compte i cridar `eth_sendTransaction`.
-* **Servidor Express minimalista**: només serveix contingut estàtic (`public/`) perquè puguis desplegar‑lo fàcilment a qualsevol servei Node.js o fins i tot com a *static hosting*.
-* **Interfície en Català**: text i comentaris en el codi pensats per a la comunitat catalanoparlant.
-
-## 📂 Estructura del projecte
-
-```
-metamask-webapp/
-├── app.js              # Servidor Express
-├── package.json        # Dependències i scripts npm
-├── public/
-│   ├── index.html      # UI principal
-│   └── script.js       # Lògica de client (MetaMask)
-└── node_modules/       # 📦 (generat per npm install)
-```
 
 ## ⚙️ Requisits
 
