@@ -71,42 +71,6 @@ Obre `http://localhost:4000` al teu navegador amb MetaMask instal·lat i segueix
   "from": "0xElTeuCompte",
   "to": "0xReceptorAddress1234567890abcdef",
   "value": "0x9184e72a000",
-  "data": "Hola món"
 }
 ```
 
-La web convertirà automàticament `"Hola món"` a hexadecimal abans d'enviar la transacció.
-
-## 🔐 Bones pràctiques de seguretat
-
-* **No** enganxis transaccions amb *private keys* o frases senceres; només dades públiques.
-* Prova primer a la **testnet** (Goerli, Sepolia…) abans de la mainnet.
-* Revisa bé les comissions (`gas`) que et mostra MetaMask abans de confirmar.
-
-## 🛠 Personalització
-
-* Pots modificar l’estil afegint CSS a `public/index.html` o movent‑lo a un fitxer nou.
-* Per afegir camp de `gasLimit` o `maxPriorityFeePerGas`, adapta `script.js`.
-* Si vols diferents idiomes, canvia els textos a l’HTML o usa una llibreria d’i18n.
-
-## 📦 Desplegament
-
-Com que només cal servir fitxers estàtics, tens diverses opcions:
-
-* **Vercel / Netlify / Cloudflare Pages**
-  Fes *deploy* del contingut de `public/` i configura la redirecció de rutes si cal.
-* **Servidor Node dedicat**
-  Simplement puja el projecte i executa `node app.js` (o usa *pm2* per a processos llargs).
-
-## 🤝 Contribucions
-
-Les *pull requests* són benvingudes! Abans de proposar canvis:
-
-1. Obre una *issue* descrivint la teva idea.
-2. Fes *fork* i crea una branca (`git checkout -b feature/nom-proposta`).
-3. Assegura’t que el linter i els tests (quan n’hi hagi) passen.
-4. Envia la teva PR explicant què has canviat i per què.
-
-## 📝 Llicència
-
-Distribuït sota la llicència **ISC** – mira `LICENSE` per als detalls.
